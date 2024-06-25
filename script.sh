@@ -52,7 +52,7 @@ if [[ ! -f "data/subsampled_tree.nwk" ]]; then
   smot sample para \
   --proportion=0.1 \
   data/tree.nwk \
-  --factor-by-capture="(denv1|denv2|denv3|denv4)" \
+  --factor-by-field=3 \
   --newick \
   > data/subsampled_tree.tre
 fi
